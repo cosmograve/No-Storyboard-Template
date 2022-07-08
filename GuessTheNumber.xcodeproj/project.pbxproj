@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A94C49A2875BF5D0089FBD3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C4992875BF5D0089FBD3 /* BaseNavigationController.swift */; };
+		3A94C49E2875BFCB0089FBD3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C49D2875BFCB0089FBD3 /* UIColor.swift */; };
+		3A94C4A02875BFE70089FBD3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C49F2875BFE70089FBD3 /* String.swift */; };
+		3A94C4A32875C0A50089FBD3 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C4A22875C0A50089FBD3 /* GradientViewController.swift */; };
+		3A94C4A52875C0C90089FBD3 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C4A42875C0C90089FBD3 /* BlueButton.swift */; };
+		3A94C4A92875C58B0089FBD3 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C4A72875C58B0089FBD3 /* StartViewController.swift */; };
+		3A94C4AA2875C58B0089FBD3 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A94C4A82875C58B0089FBD3 /* StartViewController.xib */; };
+		3A94C4AC2875C6290089FBD3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A94C4AB2875C6290089FBD3 /* View.xib */; };
+		3A94C4AE2875C9B10089FBD3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C4AD2875C9B10089FBD3 /* Router.swift */; };
+		3A94C4B22875D6AA0089FBD3 /* GuessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94C4B12875D6AA0089FBD3 /* GuessModel.swift */; };
 		3AC82753287170F300ADE187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC82752287170F300ADE187 /* AppDelegate.swift */; };
 		3AC82757287170F300ADE187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC82756287170F300ADE187 /* ViewController.swift */; };
 		3AC8275C287170F300ADE187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC8275B287170F300ADE187 /* Assets.xcassets */; };
@@ -14,7 +24,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AC8274F287170F300ADE187 /* templateNoStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = templateNoStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A94C4992875BF5D0089FBD3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		3A94C49D2875BFCB0089FBD3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3A94C49F2875BFE70089FBD3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		3A94C4A22875C0A50089FBD3 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		3A94C4A42875C0C90089FBD3 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		3A94C4A72875C58B0089FBD3 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		3A94C4A82875C58B0089FBD3 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		3A94C4AB2875C6290089FBD3 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		3A94C4AD2875C9B10089FBD3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3A94C4B12875D6AA0089FBD3 /* GuessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessModel.swift; sourceTree = "<group>"; };
+		3AC8274F287170F300ADE187 /* GuessTheNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC82752287170F300ADE187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC82756287170F300ADE187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AC8275B287170F300ADE187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,10 +53,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A94C49B2875BF860089FBD3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3A94C4992875BF5D0089FBD3 /* BaseNavigationController.swift */,
+				3A94C4AD2875C9B10089FBD3 /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3A94C49C2875BF9C0089FBD3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A94C49D2875BFCB0089FBD3 /* UIColor.swift */,
+				3A94C49F2875BFE70089FBD3 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A94C4A12875C0910089FBD3 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				3A94C4A22875C0A50089FBD3 /* GradientViewController.swift */,
+				3A94C4A42875C0C90089FBD3 /* BlueButton.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		3A94C4A62875C22C0089FBD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A94C4B12875D6AA0089FBD3 /* GuessModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A94C4AF2875CA490089FBD3 /* StartVC */ = {
+			isa = PBXGroup;
+			children = (
+				3A94C4A72875C58B0089FBD3 /* StartViewController.swift */,
+				3A94C4A82875C58B0089FBD3 /* StartViewController.xib */,
+			);
+			path = StartVC;
+			sourceTree = "<group>";
+		};
+		3A94C4B02875CA5A0089FBD3 /* EnterVC */ = {
+			isa = PBXGroup;
+			children = (
+				3AC82756287170F300ADE187 /* ViewController.swift */,
+				3A94C4AB2875C6290089FBD3 /* View.xib */,
+			);
+			path = EnterVC;
+			sourceTree = "<group>";
+		};
 		3AC82746287170F300ADE187 = {
 			isa = PBXGroup;
 			children = (
-				3AC82751287170F300ADE187 /* templateNoStoryboard */,
+				3AC82751287170F300ADE187 /* GuessTheNumber */,
 				3AC82750287170F300ADE187 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,29 +117,34 @@
 		3AC82750287170F300ADE187 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AC8274F287170F300ADE187 /* templateNoStoryboard.app */,
+				3AC8274F287170F300ADE187 /* GuessTheNumber.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3AC82751287170F300ADE187 /* templateNoStoryboard */ = {
+		3AC82751287170F300ADE187 /* GuessTheNumber */ = {
 			isa = PBXGroup;
 			children = (
+				3A94C49B2875BF860089FBD3 /* Navigation */,
+				3A94C4B02875CA5A0089FBD3 /* EnterVC */,
+				3A94C4AF2875CA490089FBD3 /* StartVC */,
+				3A94C4A62875C22C0089FBD3 /* Model */,
+				3A94C4A12875C0910089FBD3 /* Customs */,
+				3A94C49C2875BF9C0089FBD3 /* Extensions */,
 				3AC82752287170F300ADE187 /* AppDelegate.swift */,
-				3AC82756287170F300ADE187 /* ViewController.swift */,
 				3AC8275B287170F300ADE187 /* Assets.xcassets */,
 				3AC8275D287170F300ADE187 /* LaunchScreen.storyboard */,
 				3AC82760287170F300ADE187 /* Info.plist */,
 			);
-			path = templateNoStoryboard;
+			path = GuessTheNumber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3AC8274E287170F300ADE187 /* templateNoStoryboard */ = {
+		3AC8274E287170F300ADE187 /* GuessTheNumber */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AC82763287170F300ADE187 /* Build configuration list for PBXNativeTarget "templateNoStoryboard" */;
+			buildConfigurationList = 3AC82763287170F300ADE187 /* Build configuration list for PBXNativeTarget "GuessTheNumber" */;
 			buildPhases = (
 				3AC8274B287170F300ADE187 /* Sources */,
 				3AC8274C287170F300ADE187 /* Frameworks */,
@@ -76,9 +154,9 @@
 			);
 			dependencies = (
 			);
-			name = templateNoStoryboard;
+			name = GuessTheNumber;
 			productName = templateNoStoryboard;
-			productReference = 3AC8274F287170F300ADE187 /* templateNoStoryboard.app */;
+			productReference = 3AC8274F287170F300ADE187 /* GuessTheNumber.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3AC8274A287170F300ADE187 /* Build configuration list for PBXProject "templateNoStoryboard" */;
+			buildConfigurationList = 3AC8274A287170F300ADE187 /* Build configuration list for PBXProject "GuessTheNumber" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AC8274E287170F300ADE187 /* templateNoStoryboard */,
+				3AC8274E287170F300ADE187 /* GuessTheNumber */,
 			);
 		};
 /* End PBXProject section */
@@ -119,8 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A94C4AC2875C6290089FBD3 /* View.xib in Resources */,
 				3AC8275F287170F300ADE187 /* LaunchScreen.storyboard in Resources */,
 				3AC8275C287170F300ADE187 /* Assets.xcassets in Resources */,
+				3A94C4AA2875C58B0089FBD3 /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A94C4A52875C0C90089FBD3 /* BlueButton.swift in Sources */,
+				3A94C4A92875C58B0089FBD3 /* StartViewController.swift in Sources */,
 				3AC82757287170F300ADE187 /* ViewController.swift in Sources */,
+				3A94C49E2875BFCB0089FBD3 /* UIColor.swift in Sources */,
+				3A94C4AE2875C9B10089FBD3 /* Router.swift in Sources */,
+				3A94C4B22875D6AA0089FBD3 /* GuessModel.swift in Sources */,
+				3A94C4A32875C0A50089FBD3 /* GradientViewController.swift in Sources */,
+				3A94C4A02875BFE70089FBD3 /* String.swift in Sources */,
 				3AC82753287170F300ADE187 /* AppDelegate.swift in Sources */,
+				3A94C49A2875BF5D0089FBD3 /* BaseNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,13 +357,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = templateNoStoryboard/Info.plist;
+				INFOPLIST_FILE = GuessTheNumber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -283,8 +373,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaa.bbb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,13 +387,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = templateNoStoryboard/Info.plist;
+				INFOPLIST_FILE = GuessTheNumber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,8 +403,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaa.bbb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3AC8274A287170F300ADE187 /* Build configuration list for PBXProject "templateNoStoryboard" */ = {
+		3AC8274A287170F300ADE187 /* Build configuration list for PBXProject "GuessTheNumber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AC82761287170F300ADE187 /* Debug */,
@@ -330,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AC82763287170F300ADE187 /* Build configuration list for PBXNativeTarget "templateNoStoryboard" */ = {
+		3AC82763287170F300ADE187 /* Build configuration list for PBXNativeTarget "GuessTheNumber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AC82764287170F300ADE187 /* Debug */,

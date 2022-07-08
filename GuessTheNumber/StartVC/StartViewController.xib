@@ -1,22 +1,108 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="GuessTheNumber" customModuleProvider="target">
             <connections>
+                <outlet property="biggerButton" destination="Vnq-RX-0X9" id="bOW-zH-I0h"/>
+                <outlet property="dialogLabel" destination="HqD-YJ-wAg" id="dRJ-WW-ViU"/>
+                <outlet property="guessButton" destination="ocZ-ZC-pEA" id="OnZ-de-8x8"/>
+                <outlet property="refreshButton" destination="sud-I5-RKP" id="WIH-S0-QnG"/>
+                <outlet property="smallerButton" destination="5Kf-dZ-oQO" id="abu-Ad-rOs"/>
+                <outlet property="textField" destination="s7I-bg-ESY" id="sW3-Bu-EAb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="THo-Y9-eNR">
+                    <rect key="frame" x="155.5" y="372" width="103.5" height="152"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите число" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7I-bg-ESY">
+                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="52"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="N6o-rI-q3m"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocZ-ZC-pEA" customClass="BlueButton" customModule="GuessTheNumber" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="100" width="103.5" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="vrS-Y3-gnB"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Загадать"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnq-RX-0X9" customClass="BlueButton" customModule="GuessTheNumber" customModuleProvider="target">
+                    <rect key="frame" x="284" y="472" width="103.5" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="tE0-Pg-PMU"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Больше"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kf-dZ-oQO" customClass="BlueButton" customModule="GuessTheNumber" customModuleProvider="target">
+                    <rect key="frame" x="27" y="472" width="103.5" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="OAg-Zw-Hyd"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Меньше"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sud-I5-RKP">
+                    <rect key="frame" x="279.5" y="56" width="122.5" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Начать заново"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqD-YJ-wAg">
+                    <rect key="frame" x="25" y="303" width="364" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sud-I5-RKP" secondAttribute="trailing" constant="12" id="6Bi-aU-2yh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HqD-YJ-wAg" secondAttribute="trailing" constant="25" id="7GS-Ig-Fzg"/>
+                <constraint firstItem="Vnq-RX-0X9" firstAttribute="leading" secondItem="s7I-bg-ESY" secondAttribute="trailing" constant="25" id="9ko-FX-7qZ"/>
+                <constraint firstItem="THo-Y9-eNR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fbv-Br-hvd"/>
+                <constraint firstItem="THo-Y9-eNR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Kbs-ig-5Oa"/>
+                <constraint firstItem="THo-Y9-eNR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25" id="She-KK-7V6"/>
+                <constraint firstItem="5Kf-dZ-oQO" firstAttribute="centerY" secondItem="ocZ-ZC-pEA" secondAttribute="centerY" id="VeO-zC-tgL"/>
+                <constraint firstItem="5Kf-dZ-oQO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25" id="dz9-2O-mwd"/>
+                <constraint firstItem="HqD-YJ-wAg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="kxb-NO-sub"/>
+                <constraint firstItem="HqD-YJ-wAg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lI3-Zp-TSl"/>
+                <constraint firstItem="Vnq-RX-0X9" firstAttribute="centerY" secondItem="ocZ-ZC-pEA" secondAttribute="centerY" id="pYq-dn-5wn"/>
+                <constraint firstItem="ocZ-ZC-pEA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25" id="rJm-lw-wxJ"/>
+                <constraint firstItem="s7I-bg-ESY" firstAttribute="leading" secondItem="5Kf-dZ-oQO" secondAttribute="trailing" constant="25" id="rYN-O4-E2t"/>
+                <constraint firstItem="sud-I5-RKP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="wPr-SZ-xf4"/>
+                <constraint firstItem="s7I-bg-ESY" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25" id="waw-t2-oIQ"/>
+                <constraint firstItem="Vnq-RX-0X9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25" id="whq-eV-jHY"/>
+                <constraint firstItem="s7I-bg-ESY" firstAttribute="top" secondItem="HqD-YJ-wAg" secondAttribute="bottom" constant="45" id="ySd-fD-LgI"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="114"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
